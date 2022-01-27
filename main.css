@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 600px 200px;
+    grid-template-rows: 100px 50% 100px;
+    background-color: aliceblue;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background: lightslategray;
+    color: #eee;
+    padding: 2rem;
+}
+
+.about {
+    background-color: lightblue;
+    padding: 2rem;
+}
+
+.projects {
+    background-color: green;
+    padding: 2rem;
+}
+
+.projects li {
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 12rem;
+    height: 12rem;
+    display: inline-block;
+    background-color: ivory;
+}
+
+.projects ol {
+    list-style: none;
+}
+
+.labs {
+    background-color: orange;
+    padding: 2rem;
+}
+
+.labs li {
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 12rem;
+    height: 12rem;
+    display: inline-block;
+    background-color: ivory;
+}
+
+aside {
+    background-color: mediumpurple;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 100px 1fr 100px;
+    }
+
+    header,
+    footer {
+        grid-column: 1 / 3;
+    }
+}
