@@ -1,0 +1,17 @@
+body {
+  background-color: aliceblue;
+  font-family: 'Lucida Grande', verdana, sans-serif;
+}
+
+.projects li {
+  border: 3px solid green;
+  margin: 10px;
+  padding: 10px;
+  width: 12rem;
+  height: 12rem;
+  display: inline-block;
+}
+
+.projects ol {
+  list-style: none;
+}
